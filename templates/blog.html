@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endblock head %}
+
+{% block content %}
+<h1>
+    {{ section.title }}
+</h1>
+{% for page in section.pages %}
+<div style="padding-bottom: 20px;"> 
+    <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+    <small>{{ page.date }}</small>
+    {{ page.content | truncate(length=300) | safe }}
+
+    <a href="{{ page.permalink | safe }}">Read more</a>
+</div>
+{% endfor %}
+{% endblock content %}
