@@ -1,10 +1,8 @@
 +++
 title = "A nonempty perfect set in the reals that avoids rationals"
 date = 2023-12-21
-updated = 2023-12-21
+updated = 2023-12-29
 +++
-
-[under construction]
 
 One of the notoriously hard questions in Rudin's *Principles of Mathematical Analysis* asks you to construct a nonempty perfect set in \\(\mathbb{R}\\) that contains no points of \\(\mathbb{Q}\\).
 
@@ -131,7 +129,7 @@ Similarly, we get a lower bound \\(-1/p^N\\) if \\(b_k = 0\\) and \\(a_k = p-1\\
 
 \\[\left|\sum_{k=N+1}^\infty \frac{b_k-a_k}{p^k} \right| \leq \frac{1}{p^N}\\]
 
-Disregarding the two cases, we have in general
+Then with the exception of these two cases, we have in general
 
 \\[\left|\sum_{k=N+1}^\infty \frac{b_k-a_k}{p^k} \right| < \frac{1}{p^N}\\]
 
@@ -160,6 +158,33 @@ A number \\(x = 0.a_1a_2a_3\ldots\\) is rational if and only if its base-\\(p\\)
 for all \\(n \geq N \\)
 
 ### Proof
+
+Suppose \\(x \in [0, 1]\\) is rational, and let \\(x = a/b\\), where \\(a\\) and \\(b\\) are two coprime integers.
+
+For all  \\(k > 0\\). We have that
+\\[\frac{M_k}{p^k} \leq \frac{a}{b}\\]
+\\[M_k \leq \frac{ap^k}{b} \\]
+We note that, in this restriction, the definition of \\(M_k\\) coincides with the Euclidean division of \\(ap^k\\) by \\(b\\), i.e it is the unique number such that
+\\[ap^k = bM_k + r_k\\]
+where \\(0 \leq r_k < b\\). Define \\(r_k\\) this way for all \\(k\\). Then
+\\[\frac{ap^k}{b} = \frac{bM_k+r_k}{b} = M_k + \frac{r_k}{b} \\]
+Then
+\\[\frac{ap^{k+1}}{b} = p\frac{ap^k}{b} = pM_k + \frac{pr_k}{b}\\]
+and, if we further define with another application of Euclidean division, integers \\(m_k\\) and \\(r'\_k\\) 
+\\[pr_k = bm_k + r'\_k\\]
+such that \\(0 \leq r'\_k \leq b \\), we get that
+\\[\frac{ap^{k+1}}{b} = (pM_k + m_k) + \frac{r'\_k}{b}\\]
+By uniqueness of Euclidean division, we have that
+\\[M_{k+1} = pM_k + m_k\\]
+\\[r_{k+1} = r'\_k\\]
+Since the \\(k\\)th digit of \\(x\\) is given by \\(M_{k+1} - pM_k\\),
+\\[a_k = M_{k+1} - pM_k = (pM_k + m_k) - pM_k = m_k\\]
+And so we have shown that computing the digits of a rational number's expansion can be done purely by
+repeating Euclidean division recursively, giving us
+\\[pr_k = ba_k + r_{k+1}\\]
+Then the value of \\(a_k\\) is completely determined by \\(r_k\\). But any function from a finite set to itself is eventually periodic when iterated! Then we have that the digits \\(a_k\\) are eventually periodic. [under construction]
+
+For the reverse, suppose the expansion is eventually periodic. Then we may split it into a periodic part and a finite non-periodic part. The former is rational, as it it can be written as a geometric series with a rational ratio, and the latter is also rational, as it is just a finite sum of rational numbers. \\(\Box\\)
 
 [under construction]
 
