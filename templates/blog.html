@@ -12,10 +12,14 @@
 {% for page in section.pages %}
 <div style="padding-bottom: 20px;"> 
     <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
-    <small>{{ page.date }}</small>
-    {{ page.content | truncate(length=300) | safe }}
-
-    <a href="{{ page.permalink | safe }}">Read more</a>
+    <small>{{ page.date }} (Last updated {{ page.updated }})</small>
+    {% set words = page.content | split(pat=" ") %}
+    
+    {% if words | length > 75 %}
+        {{ words | slice(end=75) | join(sep=" ") | safe }}<a href="{{ page.permalink | safe }}">...</a>
+    {% else %}
+        {{ page.content | safe}}
+    {% endif %}
 </div>
 {% endfor %}
 {% endblock content %}

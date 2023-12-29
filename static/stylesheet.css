@@ -49,5 +49,10 @@ hr {
 }
 
 .MJX-TEX {
-    color: #94EFFF
+    color: #94EFFF;
+}
+
+.zola-anchor {
+    margin-left: 12px;
+    text-decoration: none;
 }
