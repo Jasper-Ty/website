@@ -16,7 +16,7 @@ We can count these in two ways:
 
 ---
 
-Choose a binary string with \\(n-k\\) 0's \\(k\\) 1's. Replace a 0 in the string with ★.  
+Choose a binary string with \\(n-k\\) 0's \\(k\\) 1's. There are \\({n \choose k}\\) of these. Replace a 0 in the string with ★.  
 
 <center>011001 0 00011110 -> 011001 ★ 00011110</center>
 
@@ -24,7 +24,7 @@ There are \\(n-k\\) zeros, so there are \\((n-k){n \choose k}\\) ways to do this
 
 ---
 
-Choose a binary string with \\(n-k-1\\) 0's \\(k+1\\) 1's. Replace a 1 in the string with ★. 
+Choose a binary string with \\(n-k-1\\) 0's \\(k+1\\) 1's. There are \\({n \choose k+1}\\) of these. Replace a 1 in the string with ★. 
 
 <center>011001 1 00011110 -> 011001 ★ 00011110</center>
 
