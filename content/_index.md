@@ -14,7 +14,7 @@ I have a Pi 4 and two Arduino Mega 2560's which I do hobby electronics with.
 I'm a fairly good Minesweeper player. I'm currently ranked #413 on the [Authoritative Minesweeper](https://minesweepergame.com/world-rankings.php) rankings.
 
 
-## My coordinates in various space
+## My coordinates in various spaces
 
 - email: jasperty2 (AT) gmail (DOT) net <br>
 - github: Jasper-Ty <br>
