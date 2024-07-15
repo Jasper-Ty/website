@@ -1,7 +1,7 @@
 +++
 title = "An identity due to Jacobi"
 date = 2024-03-14
-updated = 2024-03-14
+updated = 2024-07-15
 +++
 
 I have some incomplete notes on a proof of this identity due to Jacobi (in his Fundamenta nova theoriae functionum ellipticarum).
@@ -16,4 +16,4 @@ I did a first pass through it, and I think I have a good handle on it. The last 
 
 I also need to cut down on the confusing indices.
 
-Check it out [here](/jacobiproduct.pdf)
+Link broken as I restructure my site
