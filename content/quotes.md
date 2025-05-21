@@ -9,7 +9,15 @@ This is a small store of some quotes I've read or heard that I've liked.
 ---
 
 <small>
-“the gift of loneliness is sometimes a radical vision of society or one’s people that has not previously been taken into account”
+“Science is a differential equation. Religion is a boundary condition.”
+</small>
+
+- Alan Turing
+
+---
+
+<small>
+“the gift of loneliness is sometimes a radical vision of society or one’s people that has not previously been taken into account.”
 </small>
 
 - Alice Walker
@@ -125,6 +133,8 @@ This is a small store of some quotes I've read or heard that I've liked.
 </small>
 
 - Israel Gelfand
+
+(I actually partly disagree with this! I prefer multiplicity to unity, also see Igor Pak's writing on unity in combinatorics)
 
 ---
 
